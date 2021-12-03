@@ -3,14 +3,13 @@
   "short_name": "DLE",
   "author": "Claudia Valdivieso",
   "description": "Escribe 'dle' seguido de la palabra a buscar, luego presiona 'enter'.",
-  "version": "1.0",
+  "version": "1.1",
+  "manifest_version": 3,
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "omnibox": { "keyword": "dle" },
-  "manifest_version": 2,
-  "browser_action": {
+  "action": {
     "default_icon": {
       "16": "dle16.png",
       "32": "dle32.png"
